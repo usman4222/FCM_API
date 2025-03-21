@@ -51,7 +51,7 @@ app.post("/send-message", async (req, res) => {
           title: `New message from ${senderName}`,
           body: message,
         },
-        token: 'blobal',
+        token: 'text',
       };
   
       await admin.messaging().send(notification);
